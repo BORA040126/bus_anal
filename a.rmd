@@ -1,0 +1,10 @@
+a<-10
+print(a)
+print(a+2)
+install.packages("ggplot2",repos="https://cran.r-project.org")
+install.packages("openxlsx")
+getwd()
+update.packages(ggplot2)
+a<-c("ads4","ape","cluster")
+install.packages("ads4","ape","cluster")
+

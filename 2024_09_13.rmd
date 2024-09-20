@@ -1,0 +1,73 @@
+---
+title: 경경데 1차시
+output: html_document
+date: "2024-09-13"
+---
+
+### pirnt 하기
+```{r}
+a<-2
+print(a)
+```
+
+### 사칙연산
+```{r}
+10
+10+10
+10-10
+10*10
+10/10
+```
+
+### 문자 사칙연산
+
+```{r}
+"a"
+"a"+"b" #오류남, 지원 안 함
+```
+### 데이터셋 불러오기
+```{r}
+iris
+trees
+head(iris,10)
+tail(iris)
+str(iris)
+```
+
+### 패키지 경로 확인
+```{r}
+.libPaths()
+# 첫번째는 user
+# 두번째는 sys
+```
+
+### 패키지 불러오기
+```{r}
+library(ggplot2)
+#설치는 install.pakages("<패키지 이름>")
+#삭제는 remove.packages("<패키지 이름>")
+#언로딩 detach(package:<패키지 이름>)
+```
+
+### xlsx 사용
+```{r}
+library(openxlsx)
+write.xlsx(iris,'c:/BUS_ANAL/iris.xlsx')
+```
+
+### 불러오기
+```{r}
+install.packages("readxl")
+library(readxl)
+iris_2024=read_excel("iris.xlsx")
+iris_2024
+```
+
+### 메모리 관리
+```{r}
+ls()
+#rm(list=ls()) 현재 메모리에 있는 것 모두 지우기
+```
+
+
+
